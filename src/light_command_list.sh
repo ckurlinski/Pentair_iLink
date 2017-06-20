@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# LIGHT Control - Control/Query/Toggle LIGHT
+## ALL LIGHTS Set State On
+_ALLLIGHTS_ON_FN() {
+	_MESSAGE="ALL LIGHTS State On"
+	_PENTAIR_CMD="#ALLLIGHTS =1<cr>"
+	_SERIAL_CMD_FN
+}
+## ALL LIGHTS Set State On
+_ALLLIGHTS_OFF_FN() {
+	_MESSAGE="ALL LIGHTS State Off"
+	_PENTAIR_CMD="#ALLLIGHTS =0<cr>"
+	_SERIAL_CMD_FN
+}
+## Color Sync Lights
+_LIGHT_COLORSYNC_FN() {
+	_MESSAGE="COLORSYNC LIGHTS"
+	_PENTAIR_CMD="#COLORSYNC<cr>"
+	_SERIAL_CMD_FN
+}

@@ -8,6 +8,7 @@ source src/aux_list.sh
 source src/system_command_list.sh
 source src/pump_command_list.sh
 source src/feature_command_list.sh
+source src/light_command_list.sh
 
 # Pump Menu
 pump_menu()  {
@@ -253,6 +254,30 @@ feature_menu()  {
 	g_menu_fn
 }
 
+# Feature Menu
+light_menu()  {
+	## Header
+	HEADING="Light-Control"
+	## Write out the menu options array
+	### Use Double Quotes for Text
+	l0=(
+	"ALL LIGHTS State On"
+  "ALL LIGHTS State Off"
+  "COLORSYNC LIGHTS"
+	"Return"
+	)
+	## Map Menu to command Array
+	### Use Single Quotes for Commands
+	opt0=(
+	'_ALLLIGHTS_ON_FN'
+	'_ALLLIGHTS_OFF_FN'
+	'_LIGHT_COLORSYNC_FN'
+	'main_menu'
+	)
+	## Execute Menu Function
+	g_menu_fn
+}
+
 # Main Menu
 main_menu()  {
 	## Header
@@ -272,6 +297,7 @@ main_menu()  {
 	"Spa System"
 	"AUX Menu"
 	"Feature Menu"
+	"Light Menu"
 	"Exit"
 	)
 	## Map Menu to command Array
@@ -289,6 +315,7 @@ main_menu()  {
 	'spa_menu'
 	'aux_menu'
 	'feature_menu'
+	'light_menu'
 	'exit'
 	)
 	## Execute Menu Function
