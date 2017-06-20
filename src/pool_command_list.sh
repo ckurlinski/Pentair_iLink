@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # POOL Control - Control/Query/Toggle POOL
 ## POOL Status
@@ -10,13 +10,13 @@ _POOL_QUERY_FN() {
 ## POOL Set State On
 _POOL_ON_FN() {
 	_MESSAGE="POOL State On"
-	_PENTAIR_CMD="#POOL = 1<cr>"
+	_PENTAIR_CMD="#POOL =1<cr>"
 	_SERIAL_CMD_FN
 }
 ## POOL Set State Off
 _POOL_OFF_FN() {
 	_MESSAGE="POOL State Off"
-	_PENTAIR_CMD="#POOL = 0<cr>"
+	_PENTAIR_CMD="#POOL =0<cr>"
 	_SERIAL_CMD_FN
 }
 # POOL Temperature Set Point Control
@@ -52,12 +52,12 @@ _POOL_HEATER_STATUS_FN() {
 ## POOL Heater On
 _POOL_HEATER_ON_FN() {
 	_MESSAGE="POOL Heater On"
-	_PENTAIR_CMD="#POOLHT = 1<cr>"
+	_PENTAIR_CMD="#POOLHT =1<cr>"
 	_SERIAL_CMD_FN
 }
 ## POOL Heater Off
 _POOL_HEATER_OFF_FN() {
 	_MESSAGE="POOL Heater Off"
-	_PENTAIR_CMD="#POOLHT = 0<cr>"
+	_PENTAIR_CMD="#POOLHT =0<cr>"
 	_SERIAL_CMD_FN
 }

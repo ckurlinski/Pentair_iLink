@@ -6,6 +6,31 @@ source src/pool_command_list.sh
 source src/spa_command_list.sh
 source src/aux_list.sh
 source src/system_command_list.sh
+source src/pump_command_list.sh
+
+# Pump Menu
+pump_menu()  {
+	## Header
+	HEADING="Pump-Control"
+	## Write out the menu options array
+	### Use Double Quotes for Text
+	l0=(
+	"Current Pump Status"
+  "PUMP State On"
+  "PUMP State Off"
+	"Return"
+	)
+	## Map Menu to command Array
+	### Use Single Quotes for Commands
+	opt0=(
+	'_PUMP_QUERY_FN'
+	'_PUMP_ON_FN'
+	'_PUMP_OFF_FN'
+	'main_menu'
+	)
+	## Execute Menu Function
+	g_menu_fn
+}
 
 # Pool Menu
 pool_menu()  {
@@ -175,6 +200,7 @@ main_menu()  {
 	"Query Model Type"
 	"Current Temperature Units"
 	"Current Air Temperature"
+	"Pump Menu"
 	"Pool System"
 	"Spa System"
 	"AUX Menu"
@@ -190,6 +216,7 @@ main_menu()  {
 	'_MODEL_TYPE_FN'
 	'_UNITS_QUERY_FN'
 	'_AIRTMP_QUERY_FN'
+	'pump_menu'
 	'pool_menu'
 	'spa_menu'
 	'aux_menu'
