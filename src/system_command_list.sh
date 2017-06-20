@@ -7,6 +7,18 @@ _COSMSGS_QUERY_FN() {
 	_PENTAIR_CMD="#COSMSGS ?<cr>"
 	_SERIAL_CMD_FN
 }
+# Reset Adapter
+_RST_FN() {
+	_MESSAGE="Reset iLink Command"
+	_PENTAIR_CMD="#RST<cr>"
+	_SERIAL_CMD_FN
+}
+# Command Response Format
+_RSPFMT_QUERY_FN() {
+	_MESSAGE="Command Response Format"
+	_PENTAIR_CMD="#RSPFMT ?<cr>"
+	_SERIAL_CMD_FN
+}
 # UNITS
 ## QUERY
 _UNITS_QUERY_FN() {
@@ -19,12 +31,5 @@ _UNITS_QUERY_FN() {
 _AIRTMP_QUERY_FN() {
 	_MESSAGE="Current Air Temperature"
 	_PENTAIR_CMD="#AIRTMP ?<cr>"
-	_SERIAL_CMD_FN
-}
-# POOLTMP
-## Query
-_POOLTMP_QUERY_FN() {
-	_MESSAGE="Current Pool Temperature"
-	_PENTAIR_CMD="#POOLTMP ?<cr>"
 	_SERIAL_CMD_FN
 }

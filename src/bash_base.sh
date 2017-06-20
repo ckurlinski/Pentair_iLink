@@ -56,11 +56,11 @@ _note() {
 }
 list_template() {
 # Script wide listing function
-# Needs "_l0" array or other assigned for this to work
+# Needs "l0" array or other assigned for this to work
 # Sets selection value to "_list_output"
 	a=
 	count=1
-	for c0 in "${_l0[@]}"
+	for c0 in "${l0[@]}"
 	do
 		a0[$count]=$c0
 		echo "$count ${a0[$count]}"
@@ -89,7 +89,8 @@ menu_command_run() {
 }
 # Generic Base Menu Function
 g_menu_fn() {
-	while :
+	menu_opt=""
+	while [ "${menu_opt}" != "x" ]
 	do
 		_header ${HEADING}
 		## Generate menu list from menu options array
