@@ -26,9 +26,9 @@ _OPMODE_QUERY_FN() {
 	_SERIAL_CMD_FN
 }
 # Current System Mode
-_OPMODE_SET_TIMEOUT_FN() {
-	_MESSAGE="Set System Mode"
-	_PENTAIR_CMD="#OPMODE = 1<cr>"
+_MODEL_TYPE_FN() {
+	_MESSAGE="Query Model Type"
+	_PENTAIR_CMD="#MODEL ?<cr>"
 	_SERIAL_CMD_FN
 }
 # UNITS
