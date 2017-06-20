@@ -9,6 +9,8 @@ source src/system_command_list.sh
 source src/pump_command_list.sh
 source src/feature_command_list.sh
 source src/light_command_list.sh
+source src/cleaner_command_list.sh
+source src/waterfall_command_list.sh
 
 # Pump Menu
 pump_menu()  {
@@ -254,7 +256,7 @@ feature_menu()  {
 	g_menu_fn
 }
 
-# Feature Menu
+# Light Menu
 light_menu()  {
 	## Header
 	HEADING="Light-Control"
@@ -272,6 +274,54 @@ light_menu()  {
 	'_ALLLIGHTS_ON_FN'
 	'_ALLLIGHTS_OFF_FN'
 	'_LIGHT_COLORSYNC_FN'
+	'main_menu'
+	)
+	## Execute Menu Function
+	g_menu_fn
+}
+
+# Cleaner Menu
+cleaner_menu()  {
+	## Header
+	HEADING="Cleaner-Control"
+	## Write out the menu options array
+	### Use Double Quotes for Text
+	l0=(
+	"Current Cleaner Status"
+  "Cleaner State On"
+  "Cleaner State Off"
+	"Return"
+	)
+	## Map Menu to command Array
+	### Use Single Quotes for Commands
+	opt0=(
+	'_CLEANR_QUERY_FN'
+	'_CLEANR_ON_FN'
+	'_CLEANR_OFF_FN'
+	'main_menu'
+	)
+	## Execute Menu Function
+	g_menu_fn
+}
+
+# Waterfall Menu
+waterfall_menu()  {
+	## Header
+	HEADING="Waterfall-Control"
+	## Write out the menu options array
+	### Use Double Quotes for Text
+	l0=(
+	"Current Waterfall Status"
+  "Waterfall State On"
+  "Waterfall State Off"
+	"Return"
+	)
+	## Map Menu to command Array
+	### Use Single Quotes for Commands
+	opt0=(
+	'_WFALL_QUERY_FN'
+  '_WFALL_ON_FN'
+  '_WFALL_OFF_FN'
 	'main_menu'
 	)
 	## Execute Menu Function
@@ -298,6 +348,8 @@ main_menu()  {
 	"AUX Menu"
 	"Feature Menu"
 	"Light Menu"
+	"Cleaner Menu"
+	"Waterfall Menu"
 	"Exit"
 	)
 	## Map Menu to command Array
@@ -316,6 +368,8 @@ main_menu()  {
 	'aux_menu'
 	'feature_menu'
 	'light_menu'
+	'cleaner_menu'
+	'waterfall_menu'
 	'exit'
 	)
 	## Execute Menu Function
