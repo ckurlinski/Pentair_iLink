@@ -1,8 +1,8 @@
 #!/bin/bash
 ## Serial Device
 source src/bash_base.sh
+source usb.conf
 
-_serial_dev="/dev/null"
 if [[ -e ${_serial_dev} ]]; then
 	echo "Using serial device : ${_serial_dev}"
 else
