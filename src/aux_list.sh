@@ -2,7 +2,7 @@
 
 # AUX1 List
 _AUX1_QUERY_FN() {
-	_MESSAGE="AUX1 status is - "
+	_MESSAGE="AUX1 status"
 	_PENTAIR_CMD="#AUX1 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -18,7 +18,7 @@ _AUX1_OFF_FN() {
 }
 # AUX2 List
 _AUX2_QUERY_FN() {
-	_MESSAGE="AUX2 status is - "
+	_MESSAGE="AUX2 status"
 	_PENTAIR_CMD="#AUX2 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -34,7 +34,7 @@ _AUX2_OFF_FN() {
 }
 # AUX3 List
 _AUX3_QUERY_FN() {
-	_MESSAGE="AUX3 status is - "
+	_MESSAGE="AUX3 status"
 	_PENTAIR_CMD="#AUX3 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -50,7 +50,7 @@ _AUX3_OFF_FN() {
 }
 # AUX4 List
 _AUX4_QUERY_FN() {
-	_MESSAGE="AUX4 status is - "
+	_MESSAGE="AUX4 status"
 	_PENTAIR_CMD="#AUX4 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -66,7 +66,7 @@ _AUX4_OFF_FN() {
 }
 # AUX5 List
 _AUX5_QUERY_FN() {
-	_MESSAGE="AUX5 status is - "
+	_MESSAGE="AUX5 status"
 	_PENTAIR_CMD="#AUX5 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -82,7 +82,7 @@ _AUX5_OFF_FN() {
 }
 # AUX6 List
 _AUX6_QUERY_FN() {
-	_MESSAGE="AUX6 status is - "
+	_MESSAGE="AUX6 status"
 	_PENTAIR_CMD="#AUX6 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -98,7 +98,7 @@ _AUX6_OFF_FN() {
 }
 # AUX7 List
 _AUX7_QUERY_FN() {
-	_MESSAGE="AUX7 status is - "
+	_MESSAGE="AUX7 status"
 	_PENTAIR_CMD="#AUX7 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -114,7 +114,7 @@ _AUX7_OFF_FN() {
 }
 # AUX8 List
 _AUX8_QUERY_FN() {
-	_MESSAGE="AUX8 status is - "
+	_MESSAGE="AUX8 status"
 	_PENTAIR_CMD="#AUX8 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -130,7 +130,7 @@ _AUX8_OFF_FN() {
 }
 # AUX9 List
 _AUX9_QUERY_FN() {
-	_MESSAGE="AUX9 status is - "
+	_MESSAGE="AUX9 status"
 	_PENTAIR_CMD="#AUX9 ?<cr>"
 	_SERIAL_CMD_FN
 }
@@ -146,7 +146,7 @@ _AUX9_OFF_FN() {
 }
 # AUX10 List
 _AUX10_QUERY_FN() {
-	_MESSAGE="AUX10 status is - "
+	_MESSAGE="AUX10 status"
 	_PENTAIR_CMD="#AUX10 ?<cr>"
 	_SERIAL_CMD_FN
 }

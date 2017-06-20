@@ -90,7 +90,7 @@ menu_command_run() {
 # Generic Base Menu Function
 g_menu_fn() {
 	menu_opt=""
-	while [ "${menu_opt}" != "x" ]
+	while :
 	do
 		_header ${HEADING}
 		## Generate menu list from menu options array
