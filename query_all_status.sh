@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 source src/bash_base.sh
 source src/serial_com.sh
