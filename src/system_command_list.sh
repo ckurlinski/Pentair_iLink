@@ -19,6 +19,12 @@ _RSPFMT_QUERY_FN() {
 	_PENTAIR_CMD="#RSPFMT ?<cr>"
 	_SERIAL_CMD_FN
 }
+# Current System Mode
+_OPMODE_QUERY_FN() {
+	_MESSAGE="Current System Mode"
+	_PENTAIR_CMD="#OPMODE ?<cr>"
+	_SERIAL_CMD_FN
+}
 # UNITS
 ## QUERY
 _UNITS_QUERY_FN() {
