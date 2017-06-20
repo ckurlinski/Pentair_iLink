@@ -79,10 +79,6 @@ menu_list_template() {
 		((count++))
 	done
 	read c1
-	if [[ $c1 = [a-Z] ]]; then
-		_error "Bad Input - no donut"
-		return 1
-	fi
 	MENU_COUNT=${c1}
 	MENU_OUTPUT=${a0[$c1]}
 	opt_count=( `expr ${MENU_COUNT} - 1` )
@@ -96,11 +92,6 @@ g_menu_fn() {
 	while :
 	do
 		_header ${HEADING}
-		if [ "${ERR_MSG} != """ ]; then
-			_warning "ERROR: ${ERR_MSG}"
-		fi
-		## Reset Error MSG
-		ERR_MSG="What you talkin' 'bout Willis!!!!!'"
 		## Generate menu list from menu options array
 		menu_list_template
 		## Run choosen command from menu command array
