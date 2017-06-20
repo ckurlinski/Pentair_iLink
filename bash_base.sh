@@ -28,7 +28,7 @@ _header() {
 }
 ### Menu selection
 _select() {
-	printf "${lgreen}%s${reset}" "$@"
+	printf "${lgreen}%s${reset}\n" "$@"
 }
 ### Seperator
 _sep() {
