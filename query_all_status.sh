@@ -10,7 +10,7 @@ source src/pump_command_list.sh
 source src/feature_command_list.sh
 source src/light_command_list.sh
 source src/cleaner_command_list.sh
-source src/waterfall_command_list.sh
+source src/spillway_command_list.sh
 
 _set_colors
 
@@ -46,4 +46,4 @@ _AUX48_QUERY_FN
 _AUX49_QUERY_FN
 _AUX50_QUERY_FN
 _CLEANR_QUERY_FN
-_WFALL_QUERY_FN
+_SPILLWAY_QUERY_FN

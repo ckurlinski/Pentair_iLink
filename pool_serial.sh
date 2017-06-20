@@ -10,7 +10,7 @@ source src/pump_command_list.sh
 source src/feature_command_list.sh
 source src/light_command_list.sh
 source src/cleaner_command_list.sh
-source src/waterfall_command_list.sh
+source src/spillway_command_list.sh
 
 # Pump Menu
 pump_menu()  {
@@ -304,24 +304,24 @@ cleaner_menu()  {
 	g_menu_fn
 }
 
-# Waterfall Menu
-waterfall_menu()  {
+# Spillway Menu
+spillway_menu()  {
 	## Header
-	HEADING="Waterfall-Control"
+	HEADING="Spillway-Control"
 	## Write out the menu options array
 	### Use Double Quotes for Text
 	l0=(
-	"Current Waterfall Status"
-  "Waterfall State On"
-  "Waterfall State Off"
+	"Current Spillway Status"
+  "Spillway State On"
+  "Spillway State Off"
 	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
 	opt0=(
-	'_WFALL_QUERY_FN'
-  '_WFALL_ON_FN'
-  '_WFALL_OFF_FN'
+	'_SPILLWAY_QUERY_FN'
+  '_SPILLWAY_ON_FN'
+  '_SPILLWAY_OFF_FN'
 	'main_menu'
 	)
 	## Execute Menu Function
@@ -349,7 +349,7 @@ main_menu()  {
 	"Feature Menu"
 	"Light Menu"
 	"Cleaner Menu"
-	"Waterfall Menu"
+	"Spillway Menu"
 	"Exit"
 	)
 	## Map Menu to command Array
@@ -369,7 +369,7 @@ main_menu()  {
 	'feature_menu'
 	'light_menu'
 	'cleaner_menu'
-	'waterfall_menu'
+	'spillway_menu'
 	'exit'
 	)
 	## Execute Menu Function
