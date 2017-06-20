@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Serial Device
-_serial_dev="/dev/tty.usbserial-A501JX6M"
+_serial_dev="/dev/ttyUSB0"
 if [[ -e ${_serial_dev} ]]; then
 	echo "Using serial device : ${_serial_dev}"
 else

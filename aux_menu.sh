@@ -1,8 +1,6 @@
 #!/bin/sh
 source bash_base.sh
 source serial_com.sh
-source pool_serial.sh
-source command_list.sh
 source aux_list.sh
 
 # AUX1 Menu
@@ -23,7 +21,7 @@ aux1_menu()  {
 	'_AUX1_QUERY_FN'
 	'_AUX1_OFF_FN'
 	'_AUX1_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -46,7 +44,7 @@ AUX2_menu()  {
 	'_AUX2_QUERY_FN'
 	'_AUX2_OFF_FN'
 	'_AUX2_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -69,7 +67,7 @@ AUX3_menu()  {
 	'_AUX3_QUERY_FN'
 	'_AUX3_OFF_FN'
 	'_AUX3_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -92,7 +90,7 @@ AUX4_menu()  {
 	'_AUX4_QUERY_FN'
 	'_AUX4_OFF_FN'
 	'_AUX4_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -115,7 +113,7 @@ AUX5_menu()  {
 	'_AUX5_QUERY_FN'
 	'_AUX5_OFF_FN'
 	'_AUX5_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -138,7 +136,7 @@ AUX6_menu()  {
 	'_AUX6_QUERY_FN'
 	'_AUX6_OFF_FN'
 	'_AUX6_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -161,7 +159,7 @@ AUX7_menu()  {
 	'_AUX7_QUERY_FN'
 	'_AUX7_OFF_FN'
 	'_AUX7_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -184,7 +182,7 @@ AUX8_menu()  {
 	'_AUX8_QUERY_FN'
 	'_AUX8_OFF_FN'
 	'_AUX8_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -207,7 +205,7 @@ AUX9_menu()  {
 	'_AUX9_QUERY_FN'
 	'_AUX9_OFF_FN'
 	'_AUX9_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -230,7 +228,7 @@ AUX10_menu()  {
 	'_AUX10_QUERY_FN'
 	'_AUX10_OFF_FN'
 	'_AUX10_ON_FN'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -268,7 +266,7 @@ aux_menu()  {
   '_aux8_menu'
   '_aux9_menu'
   '_aux10_menu'
-	'pool_serial.sh'
+	'exit'
 	)
 	## Execute Menu Function
 	g_menu_fn

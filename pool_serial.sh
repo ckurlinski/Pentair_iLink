@@ -3,7 +3,6 @@
 source bash_base.sh
 source serial_com.sh
 source command_list.sh
-source aux_menu.sh
 
 # Main Menu
 main_menu()  {
@@ -16,6 +15,7 @@ main_menu()  {
 	"Current Temperature Units"
 	"Current Air Temperature"
 	"Current Pool Temperature"
+	"Aux Menu"
 	"Exit"
 	)
 	## Map Menu to command Array
@@ -25,6 +25,7 @@ main_menu()  {
 	'_UNITS_QUERY_FN'
 	'_AIRTMP_QUERY_FN'
 	'_POOLTMP_QUERY_FN'
+	'aux_menu.sh'
 	'exit'
 	)
 	## Execute Menu Function
