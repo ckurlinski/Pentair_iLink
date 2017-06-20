@@ -10,13 +10,13 @@ _SPA_QUERY_FN() {
 ## Spa Set State On
 _SPA_ON_FN() {
 	_MESSAGE="Spa State On"
-	_PENTAIR_CMD="#SPA = 1<cr>"
+	_PENTAIR_CMD="#SPA =1<cr>"
 	_SERIAL_CMD_FN
 }
 ## Spa Set State Off
 _SPA_OFF_FN() {
 	_MESSAGE="Spa State Off"
-	_PENTAIR_CMD="#SPA = 0<cr>"
+	_PENTAIR_CMD="#SPA =0<cr>"
 	_SERIAL_CMD_FN
 }
 # Spa Temperature Set Point Control
@@ -53,12 +53,12 @@ _SPA_HEATER_STATUS_FN() {
 ## Spa Heater On
 _SPA_HEATER_ON_FN() {
 	_MESSAGE="Spa Heater On"
-	_PENTAIR_CMD="#SPAHT = 1<cr>"
+	_PENTAIR_CMD="#SPAHT =1<cr>"
 	_SERIAL_CMD_FN
 }
 ## Spa Heater Off
 _SPA_HEATER_OFF_FN() {
 	_MESSAGE="Spa Heater Off"
-	_PENTAIR_CMD="#SPAHT = 0<cr>"
+	_PENTAIR_CMD="#SPAHT =0<cr>"
 	_SERIAL_CMD_FN
 }
