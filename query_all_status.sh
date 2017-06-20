@@ -29,9 +29,14 @@ l0=(
   '_AUX7_QUERY_FN '
   '_AUX8_QUERY_FN '
   '_AUX9_QUERY_FN '
-  '_AUX10_QUERY_FN '
+  '_AUX10_QUERY_FN'
 )
 
-for i in ${l0[@]}; do
-  $i
+a=
+count=1
+for c0 in "${l0[@]}"
+do
+  a0[$count]=$c0
+  ${a0[$count]}
+  ((count++))
 done
