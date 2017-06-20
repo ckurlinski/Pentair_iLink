@@ -1,6 +1,5 @@
 #!/bin/sh
 source bash_base.sh
-source serial_com.sh
 source aux_list.sh
 
 # AUX1 Menu
