@@ -20,7 +20,7 @@ AUX1_menu()  {
 	'_AUX1_QUERY_FN'
 	'_AUX1_OFF_FN'
 	'_AUX1_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -35,7 +35,7 @@ AUX2_menu()  {
 	"AUX2 Relay Status"
   "AUX2 Relay Off"
   "AUX2 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -43,7 +43,7 @@ AUX2_menu()  {
 	'_AUX2_QUERY_FN'
 	'_AUX2_OFF_FN'
 	'_AUX2_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -58,7 +58,7 @@ AUX3_menu()  {
 	"AUX3 Relay Status"
   "AUX3 Relay Off"
   "AUX3 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -66,7 +66,7 @@ AUX3_menu()  {
 	'_AUX3_QUERY_FN'
 	'_AUX3_OFF_FN'
 	'_AUX3_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -81,7 +81,7 @@ AUX4_menu()  {
 	"AUX4 Relay Status"
   "AUX4 Relay Off"
   "AUX4 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -89,7 +89,7 @@ AUX4_menu()  {
 	'_AUX4_QUERY_FN'
 	'_AUX4_OFF_FN'
 	'_AUX4_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -104,7 +104,7 @@ AUX5_menu()  {
 	"AUX5 Relay Status"
   "AUX5 Relay Off"
   "AUX5 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -112,7 +112,7 @@ AUX5_menu()  {
 	'_AUX5_QUERY_FN'
 	'_AUX5_OFF_FN'
 	'_AUX5_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -127,7 +127,7 @@ AUX6_menu()  {
 	"AUX6 Relay Status"
   "AUX6 Relay Off"
   "AUX6 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -135,7 +135,7 @@ AUX6_menu()  {
 	'_AUX6_QUERY_FN'
 	'_AUX6_OFF_FN'
 	'_AUX6_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -150,7 +150,7 @@ AUX7_menu()  {
 	"AUX7 Relay Status"
   "AUX7 Relay Off"
   "AUX7 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -158,7 +158,7 @@ AUX7_menu()  {
 	'_AUX7_QUERY_FN'
 	'_AUX7_OFF_FN'
 	'_AUX7_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -173,7 +173,7 @@ AUX8_menu()  {
 	"AUX8 Relay Status"
   "AUX8 Relay Off"
   "AUX8 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -181,7 +181,7 @@ AUX8_menu()  {
 	'_AUX8_QUERY_FN'
 	'_AUX8_OFF_FN'
 	'_AUX8_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -196,7 +196,7 @@ AUX9_menu()  {
 	"AUX9 Relay Status"
   "AUX9 Relay Off"
   "AUX9 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -204,7 +204,7 @@ AUX9_menu()  {
 	'_AUX9_QUERY_FN'
 	'_AUX9_OFF_FN'
 	'_AUX9_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -219,7 +219,7 @@ AUX10_menu()  {
 	"AUX10 Relay Status"
   "AUX10 Relay Off"
   "AUX10 Relay On"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -227,7 +227,7 @@ AUX10_menu()  {
 	'_AUX10_QUERY_FN'
 	'_AUX10_OFF_FN'
 	'_AUX10_ON_FN'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
@@ -250,7 +250,7 @@ aux_menu()  {
   "AUX Relay 8"
   "AUX Relay 9"
   "AUX Relay 10"
-	"Exit"
+	"Return"
 	)
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
@@ -265,7 +265,7 @@ aux_menu()  {
   'AUX8_menu'
   'AUX9_menu'
   'AUX10_menu'
-	'exit'
+	'break'
 	)
 	## Execute Menu Function
 	g_menu_fn
