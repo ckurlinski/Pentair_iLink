@@ -7,6 +7,7 @@ source src/spa_command_list.sh
 source src/aux_list.sh
 source src/system_command_list.sh
 source src/pump_command_list.sh
+source src/feature_command_list.sh
 
 _set_colors
 
