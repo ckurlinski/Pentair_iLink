@@ -4,7 +4,7 @@ source serial_com.sh
 source aux_list.sh
 
 # AUX1 Menu
-aux1_menu()  {
+AUX1_menu()  {
 	## Header
 	HEADING="Aux Control"
 	## Write out the menu options array
@@ -256,16 +256,16 @@ aux_menu()  {
 	## Map Menu to command Array
 	### Use Single Quotes for Commands
 	opt0=(
-	'_aux1_menu'
-	'_aux2_menu'
-	'_aux3_menu'
-	'_aux4_menu'
-  '_aux5_menu'
-  '_aux6_menu'
-  '_aux7_menu'
-  '_aux8_menu'
-  '_aux9_menu'
-  '_aux10_menu'
+	'AUX1_menu'
+	'AUX2_menu'
+	'AUX3_menu'
+	'AUX4_menu'
+  'AUX5_menu'
+  'AUX6_menu'
+  'AUX7_menu'
+  'AUX8_menu'
+  'AUX9_menu'
+  'AUX10_menu'
 	'exit'
 	)
 	## Execute Menu Function
