@@ -1,5 +1,7 @@
 #!/bin/bash
 ## Serial Device
+source bash_base.sh
+
 _serial_dev="/dev/ttyUSB0"
 if [[ -e ${_serial_dev} ]]; then
 	echo "Using serial device : ${_serial_dev}"

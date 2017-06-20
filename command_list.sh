@@ -3,11 +3,9 @@
 # COSMSGS
 # Query
 _COSMSGS_QUERY_FN() {
-  _sep
 	_MESSAGE="System Messages Settings"
 	_PENTAIR_CMD="#COSMSGS ?<cr>"
 	_SERIAL_CMD_FN
-  _sep
 }
 # UNITS
 ## QUERY
