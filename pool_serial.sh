@@ -3,6 +3,7 @@
 source bash_base.sh
 source serial_com.sh
 source command_list.sh
+source aux_menu.sh
 
 # Main Menu
 main_menu()  {
@@ -25,7 +26,7 @@ main_menu()  {
 	'_UNITS_QUERY_FN'
 	'_AIRTMP_QUERY_FN'
 	'_POOLTMP_QUERY_FN'
-	'aux_menu.sh'
+	'aux_menu'
 	'exit'
 	)
 	## Execute Menu Function
