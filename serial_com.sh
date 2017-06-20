@@ -22,9 +22,7 @@ _serial_cmd="socat - ${_serial_dev},raw,echo=0,crnl"
 # Serial Command
 _SERIAL_CMD_FN() {
 	_sep
-	${green}
 	echo ${_MESSAGE}
-	${reset}
 	echo ${_PENTAIR_CMD} | ${_serial_cmd}
 	_sep
 }
