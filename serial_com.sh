@@ -19,5 +19,6 @@ _serial_cmd="socat - ${_serial_dev},raw,echo=0,crnl"
 # Command Line
 # Serial Command
 _SERIAL_CMD_FN() {
+	_header ${_MESSAGE}
 	echo ${_PENTAIR_CMD} | ${_serial_cmd}
 }
