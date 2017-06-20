@@ -28,7 +28,7 @@ _OPMODE_QUERY_FN() {
 # Current System Mode
 _OPMODE_SET_TIMEOUT_FN() {
 	_MESSAGE="Set System Mode"
-	_PENTAIR_CMD="#OPMODE = TIMEOUT<cr>"
+	_PENTAIR_CMD="#OPMODE = 1<cr>"
 	_SERIAL_CMD_FN
 }
 # UNITS
