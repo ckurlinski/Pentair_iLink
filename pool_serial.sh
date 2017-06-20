@@ -172,6 +172,7 @@ main_menu()  {
 	"Reset iLink Command"
 	"Command Response Format"
 	"Current System Mode"
+	"Set System Mode"
 	"Current Temperature Units"
 	"Current Air Temperature"
 	"Pool System"
@@ -186,6 +187,7 @@ main_menu()  {
 	'_RST_FN'
 	'_RSPFMT_QUERY_FN'
 	'_OPMODE_QUERY_FN'
+	'_OPMODE_SET_TIMEOUT_FN'
 	'_UNITS_QUERY_FN'
 	'_AIRTMP_QUERY_FN'
 	'pool_menu'
