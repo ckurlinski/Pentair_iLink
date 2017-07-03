@@ -44,5 +44,4 @@ _AIRTMP_QUERY_FN() {
 	_MESSAGE="Current Air Temperature"
 	_PENTAIR_CMD="#AIRTMP ?<cr>"
 	_SERIAL_CMD_FN
-	_SERIAL_485_CMD_FN
 }
